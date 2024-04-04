@@ -1,0 +1,10 @@
+{
+  "name": "tcm-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@nuxt/image": "^1.3.0",
+    "nuxt-svgo": "^3.5.4",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}
