@@ -33,7 +33,7 @@ const props = withDefaults(defineProps<Props>(), {
   stroke: false,
 });
 
-const ICON_PREFIX = 'icon';
+const ICON_PREFIX = 'tcm-icon';
 const symbolId = computed(() => {
   return `#${ICON_PREFIX}-${props.name}`;
 });

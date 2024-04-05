@@ -1,11 +1,15 @@
 <template>
-  <div class="ui-base-layout">layout<slot></slot></div>
+  <div class="ui-base-layout">layout
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "BaseLayout",
-};
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.ui-base-layout {
+  background-color: gray;
+  height: 100vh;
+}
+</style>

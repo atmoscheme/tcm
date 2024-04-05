@@ -1,10 +1,5 @@
 <template>
   <NuxtLayout>
-    <ErrorHandler>
-      <NuxtPage/>
-    </ErrorHandler>
+    <NuxtPage />
   </NuxtLayout>
 </template>
-<script>
-
-</script>
