@@ -8,8 +8,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const envContent = `
 VITE_CJS_IGNORE_WARNING=true
 NUXT_DEV_API_GATEWAY_URL=https://reqres.in
-NUXT_API_GATEWAY_URL=""
-NUXT_PUBLIC_API_GATEWAY_URL=""
+NUXT_API_GATEWAY_URL=https://reqres.in
+NUXT_PUBLIC_API_GATEWAY_URL=https://reqres.in
 NUXT_SSR_DEBUG=true
 `;
 

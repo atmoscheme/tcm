@@ -1,5 +1,4 @@
 import { resolve } from 'path';
-console.log("prc", process.env, process.env.NODE_ENV )
 const isDev = process.env.NODE_ENV === 'development';
 
 /**
@@ -42,7 +41,7 @@ const commonRouteRules = {
     },
   },
 };
-
+console.log(process.env)
 export default defineNuxtConfig({
   app: {
     buildAssetsDir: 'dist',
@@ -62,8 +61,7 @@ export default defineNuxtConfig({
      *
      * STAND_NAME env will set on deploy pipeline
      */
-    apiGatewayUrl: `https://reqres.in/`,
-
+    apiBase: process.env.NUXT_DEV_API_GATEWAY_URL,
     /**
      * Enable SSR debug.
      * ENV NUXT_SSR_DEBUG
@@ -77,7 +75,6 @@ export default defineNuxtConfig({
        * BaseURL for api-gateway on client only side
        * @see NUXT_PUBLIC_API_GATEWAY_URL
        */
-      apiGatewayUrl: '',
     },
   },
   telemetry: false,
