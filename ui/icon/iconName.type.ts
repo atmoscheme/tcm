@@ -1,5 +1,3 @@
-export const availableIcons = [
-  'icon',
-] as const;
+export const availableIcons = ["arrow-right"] as const;
 
 export type IconNameType = (typeof availableIcons)[number];

@@ -8,6 +8,8 @@ export interface User {
   first_name: string;
   last_name: string;
   avatar: string;
+  description?: string;
+  rank?: number;
 }
 export type Users = User[];
 

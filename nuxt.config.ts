@@ -61,7 +61,7 @@ export default defineNuxtConfig({
      *
      * STAND_NAME env will set on deploy pipeline
      */
-    apiBase: process.env.NUXT_DEV_API_GATEWAY_URL,
+    apiGatewayUrl: process.env.NUXT_DEV_API_GATEWAY_URL,
     /**
      * Enable SSR debug.
      * ENV NUXT_SSR_DEBUG
@@ -75,6 +75,7 @@ export default defineNuxtConfig({
        * BaseURL for api-gateway on client only side
        * @see NUXT_PUBLIC_API_GATEWAY_URL
        */
+      apiGatewayUrl: process.env.NUXT_DEV_API_GATEWAY_URL,
     },
   },
   telemetry: false,
